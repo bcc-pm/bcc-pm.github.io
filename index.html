@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白崇村 · AI产品经理作品集</title>
+<meta name="description" content="白崇村 — 8年ToB产品经验，企业级AI Agent平台（APA）0-1构建者。作品集：项目叙事、产品决策、方法沉淀。">
+<style>
+  :root {
+    --primary: #1e3a5f;
+    --primary-light: #2c5a8f;
+    --accent: #0e7c66;
+    --accent-bg: #e6f4f0;
+    --text: #2d3748;
+    --text-light: #64748b;
+    --border: #d9e2ec;
+    --bg-soft: #f4f7fa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #eef1f5;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 40px 24px 60px; }
+
+  /* ===== 头部 ===== */
+  .hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5a8f 100%);
+    border-radius: 16px;
+    padding: 48px 52px;
+    color: #fff;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -60px;
+    width: 240px;
+    height: 240px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 50%;
+  }
+  .hero h1 {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .hero .role-line {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    opacity: 0.95;
+  }
+  .hero .tags { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero .tags span {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    padding: 3px 14px;
+    font-size: 13px;
+  }
+  .hero .contact {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.85;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+  }
+  .hero .contact a { color: #fff; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.5); }
+
+  /* ===== 个人简介 ===== */
+  .summary {
+    background: #fff;
+    border-left: 5px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    padding: 22px 28px;
+    margin-bottom: 36px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+    font-size: 15px;
+  }
+  .summary strong { color: var(--primary); }
+  .summary .path {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 14px;
+  }
+
+  /* ===== 区块标题 ===== */
+  .section-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 18px;
+    padding-left: 14px;
+    border-left: 5px solid var(--accent);
+  }
+
+  /* ===== 项目卡片 ===== */
+  .project-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 40px; }
+  .project-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 26px;
+    text-decoration: none;
+    color: var(--text);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    display: block;
+    position: relative;
+  }
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(30,58,95,0.12);
+    border-color: var(--primary-light);
+  }
+  .project-card .p-tag {
+    display: inline-block;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 1px 10px;
+    margin-bottom: 10px;
+  }
+  .project-card .p-tag.hot { background: #d97706; }
+  .project-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 8px;
+  }
+  .project-card .p-desc {
+    font-size: 13.5px;
+    color: var(--text-light);
+    margin-bottom: 14px;
+    min-height: 60px;
+  }
+  .project-card .p-result { display: flex; flex-wrap: wrap; gap: 6px; }
+  .project-card .p-result .pill {
+    font-size: 11.5px;
+    font-weight: 600;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: 12px;
+    padding: 2px 10px;
+  }
+  .project-card .p-link {
+    margin-top: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-light);
+  }
+  .project-card .p-link::after { content: " →"; }
+
+  /* ===== 方法论文章 ===== */
+  .article-list { background: #fff; border-radius: 12px; border: 1px solid var(--border); padding: 8px 0; margin-bottom: 40px; }
+  .article-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    border-bottom: 1px solid #eef1f5;
+    text-decoration: none;
+    color: var(--text);
+  }
+  .article-item:last-child { border-bottom: none; }
+  .article-item .a-title { font-weight: 700; font-size: 14.5px; color: var(--primary); }
+  .article-item .a-status {
+    font-size: 12px;
+    color: var(--text-light);
+    background: var(--bg-soft);
+    border-radius: 10px;
+    padding: 2px 10px;
+    flex-shrink: 0;
+  }
+
+  /* ===== 资质 ===== */
+  .credential-row {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 26px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 30px;
+    margin-bottom: 40px;
+  }
+  .credential-row .c-item { font-size: 13.5px; }
+  .credential-row .c-item::before { content: "★ "; color: #d97706; }
+  .credential-row .c-item strong { color: var(--text); }
+
+  /* ===== 页脚 ===== */
+  .footer {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--text-light);
+    padding-top: 20px;
+    border-top: 1px dashed var(--border);
+  }
+
+  @media (max-width: 760px) {
+    .project-grid, .credential-row { grid-template-columns: 1fr; }
+    .hero { padding: 32px 26px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===== 头部 ===== -->
+  <div class="hero">
+    <h1>白崇村</h1>
+    <div class="role-line">AI产品经理 · 企业级 Agent 平台方向</div>
+    <div class="tags">
+      <span>Agent平台 0-1</span>
+      <span>PromptOps / RAG</span>
+      <span>Token成本管控</span>
+      <span>央国企交付</span>
+      <span>信通院RPA标准参编</span>
+    </div>
+    <div class="contact">
+      <span>📧 【你的邮箱】</span>
+      <span>📱 【你的手机号】</span>
+      <span>📍 广州（可接受深圳 / 杭州 / 远程）</span>
+      <span>GitHub: <a href="https://github.com/baichongcun-pm">github.com/baichongcun-pm</a></span>
+    </div>
+  </div>
+
+  <!-- ===== 个人简介 ===== -->
+  <div class="summary">
+    <p>8年ToB企业级产品经理，近2年深耕<strong>企业级AI Agent平台从0到1的构建与商业化落地</strong>。主导APA智能体流程自动化平台（9大模块商用交付），服务中海油、国家电网、TCL华星光电等数十家央国企客户；所负责财务AI智能体已真实投产（月处理订单上千单，单次Token成本低至0.06元）。具备模型选型评测、Prompt体系化设计、RAG知识增强、幻觉治理与成本管控的完整AI产品实战能力。</p>
+    <div class="path">职业路径：UI设计（2015）→ 产品设计 → 企业级RPA产品（2018）→ AI智能体平台（2023）。本作品集不是代码仓库，而是我的"项目叙事馆"——记录每个项目里我做的关键决策与踩过的坑。</div>
+  </div>
+
+  <!-- ===== 项目案例 ===== -->
+  <div class="section-title">项目案例 · Project Stories</div>
+  <div class="project-grid">
+
+    <a class="project-card" href="apa-agent-platform.html">
+      <span class="p-tag hot">0-1 主导 · 核心战略</span>
+      <h3>APA 企业级智能体流程自动化平台</h3>
+      <div class="p-desc">主导公司从RPA向AI智能体（APA）的产品战略升级：三层解耦架构、IBO/VBO能力原子化、七层PromptOps、动态模型路由。</div>
+      <div class="p-result">
+        <span class="pill">9大模块商用落地</span>
+        <span class="pill">Token成本0.06–0.26元</span>
+        <span class="pill">幻觉率≤5%</span>
+        <span class="pill">数十家央国企客户</span>
+      </div>
+      <div class="p-link">阅读项目故事</div>
+    </a>
+
+    <a class="project-card" href="k2v-delivery-platform.html">
+      <span class="p-tag">快速MVP · 8周商用</span>
+      <h3>K2V 智能咨询交付平台</h3>
+      <div class="p-desc">面向咨询/知识密集型业务的智能化交付平台：多引擎协作Agent、RAG知识增强、Prompt模板库，8周完成MVP并交付商用。</div>
+      <div class="p-result">
+        <span class="pill">8周MVP到商用</span>
+        <span class="pill">6款LLM+4款OCR评测</span>
+        <span class="pill">知识增强RAG</span>
+      </div>
+      <div class="p-link">阅读项目故事</div>
+    </a>
+
+    <a class="project-card" href="finance-ai-agent.html">
+      <span class="p-tag">商业化投产 · 已上线</span>
+      <h3>财务 AI 智能体自动化项目</h3>
+      <div class="p-desc">财务共享中心票据自动化：OCR → 大模型结构化抽取 → 规则引擎校验 → 人工复核兜底的全链路流水线，真实投产运营。</div>
+      <div class="p-result">
+        <span class="pill">月处理上千单</span>
+        <span class="pill">采纳率65%→92%</span>
+        <span class="pill">幻觉率≤5%</span>
+        <span class="pill">单次成本0.06元起</span>
+      </div>
+      <div class="p-link">阅读项目故事</div>
+    </a>
+
+    <a class="project-card" href="manufacturing-ai-agent.html">
+      <span class="p-tag">央国企标杆 · 规模化</span>
+      <h3>制造业智能体流程自动化</h3>
+      <div class="p-desc">服务东方电气、TCL华星光电等制造标杆：生产流程自动化落地、POC到商用转化、信创环境与等保合规适配。</div>
+      <div class="p-result">
+        <span class="pill">累计处理12万+单</span>
+        <span class="pill">央国企标杆客户</span>
+        <span class="pill">信创+等保三级</span>
+      </div>
+      <div class="p-link">阅读项目故事</div>
+    </a>
+
+  </div>
+
+  <!-- ===== 方法论文章 ===== -->
+  <div class="section-title">方法论沉淀 · Thinking in Public</div>
+  <div class="article-list">
+    <a class="article-item" href="#">
+      <span class="a-title">《企业级 Agent 平台从 0 到 1 踩过的 7 个坑》</span>
+      <span class="a-status">规划中</span>
+    </a>
+    <a class="article-item" href="#">
+      <span class="a-title">《ToB 场景下 Token 成本怎么控：从 0.26 元到 0.06 元的取舍》</span>
+      <span class="a-status">规划中</span>
+    </a>
+    <a class="article-item" href="#">
+      <span class="a-title">《RPA 到 Agent：企业自动化的架构演进》</span>
+      <span class="a-status">规划中</span>
+    </a>
+  </div>
+
+  <!-- ===== 资质 ===== -->
+  <div class="section-title">资质与背书</div>
+  <div class="credential-row">
+    <div class="c-item"><strong>信通院RPA标准参编专家</strong>（行业标准共建）</div>
+    <div class="c-item"><strong>GUI设计专利 4项</strong>（产品界面外观设计）</div>
+    <div class="c-item"><strong>主导申报软件著作权 10项</strong>（著作权归属所在企业）</div>
+    <div class="c-item"><strong>央国企标杆客户</strong>：中海油 / 国家电网 / 东方电气 / TCL华星光电</div>
+  </div>
+
+  <div class="footer">
+    白崇村 · AI产品经理作品集 · 2026 · 简历与项目数据口径一致，如需了解更多项目细节欢迎联系
+  </div>
+
+</div>
+</body>
+</html>

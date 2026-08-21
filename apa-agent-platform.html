@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APA企业级智能体流程自动化平台 · 白崇村作品集</title>
+<style>
+  :root {
+    --primary: #1e3a5f;
+    --primary-light: #2c5a8f;
+    --accent: #0e7c66;
+    --accent-bg: #e6f4f0;
+    --text: #2d3748;
+    --text-light: #64748b;
+    --border: #d9e2ec;
+    --bg-soft: #f4f7fa;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: #eef1f5;
+    color: var(--text);
+    line-height: 1.75;
+  }
+  .container { max-width: 860px; margin: 0 auto; padding: 28px 22px 60px; }
+
+  .top-nav { margin-bottom: 18px; font-size: 13.5px; }
+  .top-nav a { color: var(--primary-light); text-decoration: none; font-weight: 600; }
+  .top-nav a:hover { text-decoration: underline; }
+
+  /* ===== Hero ===== */
+  .hero {
+    background: linear-gradient(135deg, #1e3a5f 0%, #2c5a8f 100%);
+    border-radius: 14px;
+    padding: 36px 40px;
+    color: #fff;
+    margin-bottom: 28px;
+  }
+  .hero .p-tag {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 10px;
+    padding: 2px 12px;
+    margin-bottom: 12px;
+  }
+  .hero h1 { font-size: 26px; font-weight: 800; letter-spacing: 1px; }
+  .hero .p-sub { margin-top: 8px; font-size: 14px; opacity: 0.9; }
+  .hero .p-result { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .hero .p-result .pill {
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--accent);
+    border-radius: 14px;
+    padding: 3px 13px;
+  }
+  .hero .p-result .pill.warn { background: #d97706; }
+
+  /* ===== 正文区块 ===== */
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 26px 30px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 14px;
+    padding-left: 12px;
+    border-left: 4px solid var(--accent);
+  }
+  .card h3 { font-size: 14.5px; color: var(--primary); margin: 14px 0 6px; }
+  .card p { font-size: 14px; margin-bottom: 8px; }
+  .card ul { list-style: none; padding-left: 2px; }
+  .card ul li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .card ul li::before { content: "▸"; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .card ul li strong { color: var(--text); }
+  .card ul li .data { color: var(--accent); font-weight: 700; }
+  .card .plain { color: var(--text-light); font-size: 13px; }
+
+  .decision-box {
+    background: var(--accent-bg);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .decision-box .q { font-weight: 800; color: var(--accent); font-size: 14px; margin-bottom: 4px; }
+  .decision-box .a { font-size: 13.5px; }
+
+  .result-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+  .result-item {
+    background: var(--bg-soft);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .result-item .num { font-size: 19px; font-weight: 800; color: var(--accent); }
+  .result-item .desc { font-size: 12.5px; color: var(--text-light); }
+
+  .lessons li::before { content: "⚠"; position: absolute; left: 0; color: #d97706; }
+
+  .doc-table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 13px; }
+  .doc-table th {
+    background: var(--bg-soft);
+    text-align: left;
+    padding: 9px 12px;
+    color: var(--primary);
+    font-weight: 700;
+    border-bottom: 2px solid var(--border);
+  }
+  .doc-table td { padding: 9px 12px; border-bottom: 1px solid #eef1f5; }
+  .doc-table td .status { font-size: 11.5px; background: var(--accent-bg); color: var(--accent); border-radius: 8px; padding: 1px 8px; }
+
+  .footer {
+    text-align: center;
+    font-size: 12.5px;
+    color: var(--text-light);
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px dashed var(--border);
+  }
+  @media (max-width: 640px) {
+    .result-grid { grid-template-columns: 1fr; }
+    .hero { padding: 28px 24px; }
+    .card { padding: 20px 20px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="top-nav"><a href="index.html">← 返回作品集首页</a></div>
+
+  <div class="hero">
+    <span class="p-tag">0-1 主导 · 公司核心战略产品</span>
+    <h1>APA 企业级智能体流程自动化平台</h1>
+    <div class="p-sub">主导公司从RPA向AI智能体（APA）的产品战略升级 · 2023 — 至今</div>
+    <div class="p-result">
+      <span class="pill">9大模块商用落地</span>
+      <span class="pill">Token成本0.06–0.26元/次</span>
+      <span class="pill">幻觉率≤5%</span>
+      <span class="pill">采纳率65%→92%</span>
+      <span class="pill warn">数十家央国企客户</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>背景 · Situation</h2>
+    <p>传统RPA（机器人流程自动化）只能执行<strong>固定脚本</strong>——遇到格式变了的单据、没见过的表述、需要判断的业务场景就"死机"。而央国企的数字化已经进入深水区：财务票据、生产流程、供应链单据中大量信息是非结构化、模糊的，光靠"录脚本"根本解决不了。</p>
+    <p>公司判断：下一阶段的企业自动化必须从"<strong>执行指令的机器人</strong>"升级为"<strong>会思考、能协作的智能体</strong>"。我负责把这个判断变成一款可商用、可交付、可算账的产品。</p>
+  </div>
+
+  <div class="card">
+    <h2>我的角色 · Task</h2>
+    <p>作为<strong>AI产品经理（平台负责人）</strong>，0-1负责APA平台的整体产品规划与架构设计，并对商业化和央国企大客户交付结果负责。需要回答三个问题：平台长什么样？怎么保证AI结果可靠？怎么让企业算得过账来？</p>
+  </div>
+
+  <div class="card">
+    <h2>关键决策 · Action</h2>
+
+    <div class="decision-box">
+      <div class="q">决策1：为什么要从"流程编排"升级为"三层解耦架构"？</div>
+      <div class="a">如果延续RPA的"流程即产品"思路，每个客户都要定制一套，无法规模化。我主导设计了<strong>"流程编排层 - 能力层 - 模型层"</strong>三层解耦：上层业务人员可视编排，中层AI能力做成可复用积木（IBO/VBO两层抽象），底层模型可随时更换。业务逻辑与模型解耦后，模型升级对业务零影响。</div>
+    </div>
+
+    <div class="decision-box">
+      <div class="q">决策2：AI结果不可控，企业不敢用怎么办？</div>
+      <div class="a">落地<strong>七层PromptOps体系</strong>（提示词标准化分层管理）+ <strong>三层三类RAG架构</strong>（检索增强，回答先查资料再作答），并构建<strong>Judge + Auto-Patch</strong>质量闭环：AI自己评估自己的输出质量，不达标自动触发修复。最终把模型幻觉率控制在<strong class="data">5%以内</strong>，采纳率从65%提升到<strong class="data">92%</strong>。</div>
+    </div>
+
+    <div class="decision-box">
+      <div class="q">决策3：大模型调用很贵，企业算不过账怎么办？</div>
+      <div class="a">主导<strong>6款LLM + 4款OCR的选型评测</strong>，设计<strong>动态模型路由</strong>：简单任务走便宜模型、复杂任务走强模型，绝不"一刀切用最贵的"。单次任务Token成本精算到<strong class="data">0.06–0.26元</strong>，让企业级AI从"尝鲜"走向"算账"。</div>
+    </div>
+
+    <div class="decision-box">
+      <div class="q">决策4：央国企场景交付难，怎么破局？</div>
+      <div class="a">覆盖<strong>信创环境适配</strong>（国产化操作系统/数据库/芯片）与<strong>等保三级合规</strong>要求，主导POC到商用的全流程转化，直接参与招投标技术应答与方案讲解——把"技术优势"翻译成"客户听得懂的交付承诺"。</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>成果 · Result</h2>
+    <div class="result-grid">
+      <div class="result-item"><div class="num">9大模块</div><div class="desc">全部落地商用：智能体编排 / 知识库 / 任务调度 / 质量治理 / 成本管控等</div></div>
+      <div class="result-item"><div class="num">0.06–0.26元</div><div class="desc">单次任务Token成本，动态路由下的精算结果</div></div>
+      <div class="result-item"><div class="num">≤5%</div><div class="desc">模型幻觉率（Judge+Auto-Patch闭环控制）</div></div>
+      <div class="result-item"><div class="num">65%→92%</div><div class="desc">Agent处理采纳率（人工反馈回流持续优化）</div></div>
+      <div class="result-item"><div class="num">数十家</div><div class="desc">央国企标杆客户：中海油 / 国家电网 / TCL华星光电等</div></div>
+      <div class="result-item"><div class="num">多行业</div><div class="desc">制造业 / 财务 / 供应链场景规模化交付</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>复盘 · Retrospective</h2>
+    <ul class="lessons">
+      <li><strong>坑1：过度设计。</strong>早期模块边界切得太细，研发排期失控。教训：MVP先砍到"一个场景跑通全链路"，再扩展模块。</li>
+      <li><strong>坑2：低估Prompt质量方差。</strong>同一个Agent，业务人员写的Prompt效果天差地别。七层PromptOps不是为了"规范化"，是为了<strong>降低效果方差</strong>——这是后来才想明白的本质。</li>
+      <li><strong>坑3：信创适配的隐性成本。</strong>国产GPU和推理框架的坑远多于预期，选型评测必须把信创环境的推理性能作为一票否决项。</li>
+      <li><strong>坑4：客户要的是"结果"不是"能力"。</strong>早期给客户讲架构，客户不买账；后来改成"你的财务单据处理时间从2天变2小时"，POC转化率立刻提升。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>作品集文档规划</h2>
+    <p>以下文档放入本仓库 docs/ 目录（均已脱敏改写）：</p>
+    <table class="doc-table">
+      <tr><th>文档</th><th>内容</th><th>状态</th></tr>
+      <tr><td><strong>架构演进图</strong></td><td>RPA → Agent 的架构对比图（ProcessOn/Figma绘制）</td><td><span class="status">待补充</span></td></tr>
+      <tr><td><strong>Token成本优化方案</strong></td><td>从0.26元到0.06元的完整分析表（模型路由策略）</td><td><span class="status">待补充</span></td></tr>
+      <tr><td><strong>PRD节选</strong></td><td>平台核心模块PRD节选（脱敏改写版）</td><td><span class="status">待补充</span></td></tr>
+      <tr><td><strong>Prompt设计示例</strong></td><td>通用业务场景的Prompt示例（脱敏）</td><td><span class="status">待补充</span></td></tr>
+      <tr><td><strong>产品截图</strong></td><td>界面截图3-5张（screenshots/目录）</td><td><span class="status">待补充</span></td></tr>
+    </table>
+  </div>
+
+  <div class="footer">白崇村 · 项目叙事馆 · 数据口径与简历一致</div>
+
+</div>
+</body>
+</html>
