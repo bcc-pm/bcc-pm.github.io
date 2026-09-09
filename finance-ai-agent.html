@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>财务 AI 智能体自动化项目 · 白崇村</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">白</span>
+      <span class="brand-name">白崇村<small>AI PRODUCT MANAGER</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">← 返回项目</a></li>
+      <li><a href="index.html#contact">联系我</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap-narrow">
+
+  <header class="page-hero">
+    <div class="ph-breadcrumb"><a href="index.html">首页</a> <span>→</span> <span>项目 03</span></div>
+    <span class="ph-tag">商业化投产 · 已上线运行</span>
+    <h1>财务 AI 智能体自动化项目</h1>
+    <p class="p-sub">财务共享中心票据处理全链路自动化 · OCR + 大模型 + 规则引擎 + 人工复核兜底</p>
+    <div class="pills">
+      <span class="pill g">月处理上千单</span>
+      <span class="pill g">6 款 LLM + 4 款 OCR 评测</span>
+      <span class="pill g">采纳率 65%→92%</span>
+      <span class="pill g">幻觉率 ≤5%</span>
+      <span class="pill b">单次 Token 成本 0.06 元起</span>
+    </div>
+  </header>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">背</span><h2>背景 · Situation</h2><span class="en">Background</span></div>
+    <p>财务共享中心每天有大量票据录入、审核工作依赖人工：费用报销、应付账款、发票核验……人工处理速度慢、易出错、夜间无法运转。传统 RPA 对<strong>格式固定的电子单据</strong>有效，但对<strong>拍照发票、手写备注、版式各异的纸质单据</strong>无能为力——这正是 AI 能发挥价值的地方。</p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">角</span><h2>我的角色 · Task</h2><span class="en">My Role</span></div>
+    <p>作为<strong>产品负责人</strong>，负责整个自动化流水线的产品设计、效果保障与成本控制，并对"AI 真实投产、持续稳定运行"这一结果负责。核心挑战：财务场景<strong>错不起</strong>——错误率必须低到财务人员愿意信任 AI。</p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">决</span><h2>核心链路与关键决策 · Action</h2><span class="en">Pipeline & Decisions</span></div>
+
+    <div class="pipeline">
+      <div class="step"><div class="s-name">OCR 票据识别</div><div class="s-desc">多格式票据结构化识别</div></div>
+      <div class="arr">→</div>
+      <div class="step"><div class="s-name">大模型结构化抽取</div><div class="s-desc">语义理解、字段抽取</div></div>
+      <div class="arr">→</div>
+      <div class="step"><div class="s-name">规则引擎校验</div><div class="s-desc">业务规则硬校验拦截</div></div>
+      <div class="arr">→</div>
+      <div class="step"><div class="s-name">人工复核兜底</div><div class="s-desc">低置信度单据转人工</div></div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q1</span>为什么"大模型抽取"前面要加 OCR、后面要加规则引擎？</div>
+      <div class="a">财务数据错不起。纯大模型端到端处理，抽错一个字段就可能造成账务错误。设计成<strong>流水线 + 兜底</strong>：OCR 负责"看得准"，大模型负责"理解得对"，规则引擎负责"业务逻辑硬校验"（如金额必须一致、税号格式必须合法），低置信度单据<strong>强制转人工复核</strong>——让 AI 处理"能确定的"，把"不确定的"交给人工。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q2</span>OCR 和大模型那么多，怎么选型才靠谱？</div>
+      <div class="a">主导完成 <strong>6 款 LLM + 4 款 OCR 的系统化选型评测</strong>：按识别精度、单据类型适配度、推理成本、信创环境兼容性四个维度打分，输出<strong>选型决策报告</strong>。同时设计<strong>动态路由</strong>——简单票据走便宜模型、复杂票据走强模型，这是单笔成本能从 0.26 元压到 <b class="d">0.06 元</b> 的关键动作之一。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q3</span>AI 效果不稳定，怎么持续保障？</div>
+      <div class="a">建立 <strong>采纳率监控 + 人工反馈回流</strong>机制：人工复核时的一键修正，自动回流为优化数据。Agent 处理采纳率从 65% 提升到 <b class="d">92%</b>，幻觉率控制在 <b class="d">5% 以内</b>——不是上线就完事，而是持续迭代优化的运营体系。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q4</span>怎么让财务总监算得过账？</div>
+      <div class="a">把<strong>单笔处理成本精算到 0.06–0.26 元</strong>，与人工成本对比形成可量化的 ROI 汇报材料。AI 不是"炫技"，是每一笔都有账可算的降本增效工具。<span class="plain">（白话：每处理一单的成本精确到分，比人工便宜多少、省了多少人力，全部量化给客户看）</span></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">果</span><h2>成果 · Result</h2><span class="en">Outcomes</span></div>
+    <div class="rgrid">
+      <div class="ritem g"><div class="num">上千单/月</div><div class="desc">稳定投产，覆盖费用报销、应付账款等核心场景</div></div>
+      <div class="ritem"><div class="num">6 + 4</div><div class="desc">6 款 LLM + 4 款 OCR 系统化评测，输出选型决策报告</div></div>
+      <div class="ritem g"><div class="num">65%→92%</div><div class="desc">Agent 处理采纳率（反馈回流持续优化）</div></div>
+      <div class="ritem"><div class="num">≤5%</div><div class="desc">幻觉率控制（规则引擎 + 人工复核双兜底）</div></div>
+      <div class="ritem g"><div class="num">0.06–0.26 元</div><div class="desc">单笔处理成本，形成可量化 ROI 汇报</div></div>
+      <div class="ritem"><div class="num">4 环节</div><div class="desc">OCR → LLM → 规则引擎 → 人工复核全链路</div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">复</span><h2>复盘 · Retrospective</h2><span class="en">Lessons</span></div>
+    <ul class="lessons">
+      <li><strong>坑 1：过度相信大模型的"聪明"。</strong>早期想直接端到端，结果金额字段偶尔抽错。教训：<strong>财务场景要的是"确定性"，不是"聪明"</strong>——规则引擎兜底不是退步，是产品成熟的表现。</li>
+      <li><strong>坑 2：人工复核流程设计不周。</strong>复核工作台最初设计得太复杂，效率反降。后来按"只展示需要确认的差异项"重构，复核效率才上来。</li>
+      <li><strong>坑 3：效果评估指标选错。</strong>一开始只盯准确率，后来发现"采纳率"才是客户真正感知的指标——客户不关心模型准确率，只关心"AI 替我处理了多少单、我对结果多放心"。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">档</span><h2>作品集文档规划</h2><span class="en">Docs</span></div>
+    <p>以下文档计划放入该项目仓库 docs/ 目录（均已脱敏改写）：</p>
+    <table class="doctab">
+      <tr><th>文档</th><th>内容</th><th style="width:90px">状态</th></tr>
+      <tr><td><strong>流水线架构图</strong></td><td>OCR → LLM → 规则引擎 → 人工复核 全链路设计图</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>LLM / OCR 选型评测报告</strong></td><td>6 款 LLM + 4 款 OCR 的评测维度与结论摘要（脱敏版）</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>成本优化分析表</strong></td><td>单笔成本 0.06–0.26 元的构成与优化路径</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>采纳率优化复盘</strong></td><td>65%→92% 的提升过程与关键动作</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>ROI 汇报框架</strong></td><td>给财务总监看的降本增效量化框架</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>产品截图</strong></td><td>界面截图 3-5 张（screenshots/ 目录）</td><td><span class="st">待补充</span></td></tr>
+    </table>
+  </div>
+
+  <div class="backband">
+    <a class="link-more" href="index.html#projects">← 返回全部项目</a>
+    <a class="link-more" href="mailto:bcc48625@163.com?subject=关于财务AI项目的进一步了解">想进一步了解？联系我 →</a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 白崇村 · Portfolio v3</span>
+      <span>数据口径与简历一致 · 内容已脱敏</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.panel').forEach(el => { el.classList.add('reveal'); io.observe(el); });
+</script>
+</body>
+</html>

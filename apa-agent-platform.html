@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APA 企业级智能体流程自动化平台 · 白崇村</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">白</span>
+      <span class="brand-name">白崇村<small>AI PRODUCT MANAGER</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#projects">← 返回项目</a></li>
+      <li><a href="index.html#contact">联系我</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="wrap-narrow">
+
+  <header class="page-hero">
+    <div class="ph-breadcrumb"><a href="index.html">首页</a> <span>→</span> <span>项目 01</span></div>
+    <span class="ph-tag">0→1 主导 · 公司核心战略产品</span>
+    <h1>APA 企业级智能体流程自动化平台</h1>
+    <p class="p-sub">主导公司从 RPA 向 AI 智能体（APA）的产品战略升级 · 2023 — 至今</p>
+    <div class="pills">
+      <span class="pill g">9 大模块商用落地</span>
+      <span class="pill g">幻觉率 ≤5%</span>
+      <span class="pill g">采纳率 65%→92%</span>
+      <span class="pill b">Token 成本 0.06–0.26 元/次</span>
+      <span class="pill b">数十家央国企客户</span>
+    </div>
+  </header>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">背</span><h2>背景 · Situation</h2><span class="en">Background</span></div>
+    <p>传统 RPA（机器人流程自动化）只能执行<strong>固定脚本</strong>——遇到格式变了的单据、没见过的表述、需要判断的业务场景就"死机"。而央国企的数字化已进入深水区：财务票据、生产流程、供应链单据中大量信息是非结构化、模糊的，光靠"录脚本"根本解决不了。</p>
+    <p>公司判断：下一阶段的企业自动化必须从"<strong>执行指令的机器人</strong>"升级为"<strong>会思考、能协作的智能体</strong>"。我负责把这个判断变成一款可商用、可交付、可算账的产品。</p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">角</span><h2>我的角色 · Task</h2><span class="en">My Role</span></div>
+    <p>作为<strong>AI 产品经理（平台负责人）</strong>，0→1 负责 APA 平台的整体产品规划与架构设计，并对商业化和央国企大客户交付结果负责。需要回答三个问题：平台长什么样？怎么保证 AI 结果可靠？怎么让企业算得过账来？</p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">决</span><h2>关键决策 · Action</h2><span class="en">Key Decisions</span></div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q1</span>为什么要从"流程编排"升级为"三层解耦架构"？</div>
+      <div class="a">如果延续 RPA 的"流程即产品"思路，每个客户都要定制一套，无法规模化。我主导设计了<strong>"流程编排层 - 能力层 - 模型层"</strong>三层解耦：上层业务人员可视编排，中层 AI 能力做成可复用积木（IBO / VBO 两层抽象），底层模型可随时更换。业务逻辑与模型解耦后，模型升级对业务零影响。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q2</span>AI 结果不可控，企业不敢用怎么办？</div>
+      <div class="a">落地<strong>七层 PromptOps 体系</strong>（提示词标准化分层管理）+ <strong>三层三类 RAG 架构</strong>（检索增强，先查资料再作答），并构建 <strong>Judge + Auto-Patch</strong> 质量闭环：AI 自己评估自己的输出质量，不达标自动触发修复。最终把模型幻觉率控制在 <b class="d">5% 以内</b>，采纳率从 65% 提升到 <b class="d">92%</b>。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q3</span>大模型调用很贵，企业算不过账怎么办？</div>
+      <div class="a">基于财务 AI 项目中 <strong>6 款 LLM + 4 款 OCR 选型评测</strong> 的结论，在平台层设计<strong>动态模型路由</strong>：简单任务走便宜模型、复杂任务走强模型，绝不"一刀切用最贵的"。单次任务 Token 成本精算到 <b class="d">0.06–0.26 元</b>，让企业级 AI 从"尝鲜"走向"算账"。</div>
+    </div>
+
+    <div class="dbox">
+      <div class="q"><span class="qi">Q4</span>央国企场景交付难，怎么破局？</div>
+      <div class="a">覆盖<strong>信创环境适配</strong>（国产操作系统 / 数据库 / 芯片）与<strong>等保三级合规</strong>要求，主导 POC→商用的全流程转化，直接参与招投标技术应答与方案讲解——把"技术优势"翻译成"客户听得懂的交付承诺"。</div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">果</span><h2>成果 · Result</h2><span class="en">Outcomes</span></div>
+    <div class="rgrid">
+      <div class="ritem"><div class="num">9 大模块</div><div class="desc">全部商用：编排 / 知识库 / 调度 / 质量治理 / 成本管控等</div></div>
+      <div class="ritem g"><div class="num">0.06–0.26 元</div><div class="desc">单次任务 Token 成本，动态路由下的精算结果</div></div>
+      <div class="ritem"><div class="num">≤5%</div><div class="desc">模型幻觉率（Judge+Auto-Patch 闭环控制）</div></div>
+      <div class="ritem g"><div class="num">65%→92%</div><div class="desc">Agent 处理采纳率（人工反馈回流持续优化）</div></div>
+      <div class="ritem"><div class="num">数十家</div><div class="desc">央国企标杆客户：中海油 / 国家电网 / TCL华星光电等</div></div>
+      <div class="ritem g"><div class="num">多行业</div><div class="desc">制造业 / 财务 / 供应链场景规模化交付</div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">复</span><h2>复盘 · Retrospective</h2><span class="en">Lessons</span></div>
+    <ul class="lessons">
+      <li><strong>坑 1：过度设计。</strong>早期模块边界切得太细，研发排期失控。教训：MVP 先砍到"一个场景跑通全链路"，再扩展模块。</li>
+      <li><strong>坑 2：低估 Prompt 质量方差。</strong>同一个 Agent，业务人员写的 Prompt 效果天差地别。七层 PromptOps 不是为了"规范化"，是为了<strong>降低效果方差</strong>——这是后来才想明白的本质。</li>
+      <li><strong>坑 3：信创适配的隐性成本。</strong>国产 GPU 和推理框架的坑远多于预期，选型评测必须把信创环境的推理性能作为一票否决项。</li>
+      <li><strong>坑 4：客户要的是"结果"不是"能力"。</strong>早期给客户讲架构，客户不买账；后来改成"你的财务单据处理时间从 2 天变 2 小时"，POC 转化率立刻提升。</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head"><span class="panel-num">档</span><h2>作品集文档规划</h2><span class="en">Docs</span></div>
+    <p>以下文档计划放入该项目仓库 docs/ 目录（均已脱敏改写）：</p>
+    <table class="doctab">
+      <tr><th>文档</th><th>内容</th><th style="width:90px">状态</th></tr>
+      <tr><td><strong>架构演进图</strong></td><td>RPA → Agent 的架构对比图（ProcessOn / Figma 绘制）</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>Token 成本优化方案</strong></td><td>从 0.26 元到 0.06 元的分析表（模型路由策略）</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>PRD 节选</strong></td><td>平台核心模块 PRD 节选（脱敏改写版）</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>Prompt 设计示例</strong></td><td>通用业务场景的 Prompt 示例（脱敏）</td><td><span class="st">待补充</span></td></tr>
+      <tr><td><strong>产品截图</strong></td><td>界面截图 3-5 张（screenshots/ 目录）</td><td><span class="st">待补充</span></td></tr>
+    </table>
+  </div>
+
+  <div class="backband">
+    <a class="link-more" href="index.html#projects">← 返回全部项目</a>
+    <a class="link-more" href="mailto:bcc48625@163.com?subject=关于APA平台项目的进一步了解">想进一步了解？联系我 →</a>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-bottom">
+      <span>© 2026 白崇村 · Portfolio v3</span>
+      <span>数据口径与简历一致 · 内容已脱敏</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.panel').forEach(el => { el.classList.add('reveal'); io.observe(el); });
+</script>
+</body>
+</html>

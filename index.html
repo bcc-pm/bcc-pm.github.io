@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白崇村 · AI产品经理 — 企业级 Agent 平台作品集</title>
+<meta name="description" content="白崇村 — 10年产品经验（其中近8年ToB），近2年深耕企业级AI Agent平台（APA）0到1。UI设计师→ToC PM→ToB PM→AI PM 完整转型路径。服务中海油、国家电网、TCL华星光电等央国企。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== 顶部导航 ===================== -->
+<nav class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">白</span>
+      <span class="brand-name">白崇村<small>AI PRODUCT MANAGER</small></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">关于</a></li>
+      <li><a href="#expertise">专长</a></li>
+      <li><a href="#projects">项目</a></li>
+      <li><a href="#experience">经历</a></li>
+      <li><a href="#credentials">资质</a></li>
+      <li><a class="nav-cta" href="#contact">联系我</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+  </div>
+</nav>
+
+<!-- ===================== Hero ===================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+
+      <div class="hero-left">
+        <div class="hero-badge"><span class="dot"></span>求职中 · AI产品经理 · 广州（可深圳 / 杭州）</div>
+        <h1>白崇村<span class="grad">.</span></h1>
+        <div class="hero-role">AI 产品经理<span class="sep">/</span>企业级 Agent 平台方向</div>
+        <p class="hero-lead"><strong>10 年产品经验 · 近 8 年 ToB</strong>，近 2 年主导<strong>企业级 AI Agent 平台从 0 到 1 的构建与商业化落地</strong>。把 AI 能力做成企业"可配置、可监控、可算账"的标准化产品，让 AI 从尝鲜走向投产。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">查看项目案例 ↓</a>
+          <a class="btn btn-ghost" href="mailto:bcc48625@163.com">与我联系</a>
+        </div>
+        <div class="hero-meta">
+          <a class="meta-chip" href="tel:15690713579"><span class="ic">☎</span>15690713579</a>
+          <a class="meta-chip" href="mailto:bcc48625@163.com"><span class="ic">✉</span>bcc48625@163.com</a>
+          <a class="meta-chip" href="https://github.com/bcc-pm" target="_blank" rel="noopener"><span class="ic">⌥</span>github.com/bcc-pm</a>
+          <span class="meta-chip"><span class="ic">◎</span>广州</span>
+        </div>
+      </div>
+
+      <!-- Hero 右侧：身份信息卡（替代头像，突出数据） -->
+      <div class="idcard-wrap">
+        <div class="idcard reveal">
+          <div class="idcard-top">
+            <div class="idcard-avatar">白</div>
+            <h3>BAI CHONGCUN</h3>
+            <p>AI PRODUCT MANAGER · 广州</p>
+          </div>
+          <div class="idcard-body">
+            <div class="idcard-tags">
+              <span>Agent 平台 0→1</span><span>PromptOps</span><span>RAG</span>
+              <span>Token 成本管控</span><span>央国企交付</span>
+            </div>
+            <div class="idcard-stats">
+              <div class="idcard-stat"><b>10 年</b><span>产品经验 · 近 8 年 ToB</span></div>
+              <div class="idcard-stat"><b>9 大模块</b><span>APA 平台商用落地</span></div>
+              <div class="idcard-stat"><b>12 万+ 单</b><span>制造场景累计处理</span></div>
+              <div class="idcard-stat"><b>0.06 元</b><span>单次 Token 成本低至</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 数据带 -->
+    <div class="statsbar reveal">
+      <div class="stat-cell"><div class="num grad">10<small> 年</small></div><div class="lbl">产品经验 · 近 8 年 ToB（2015 至今）</div></div>
+      <div class="stat-cell"><div class="num">0→1</div><div class="lbl">企业级 Agent 平台构建</div></div>
+      <div class="stat-cell"><div class="num grad">≤5<small>%</small></div><div class="lbl">模型幻觉率治理目标</div></div>
+      <div class="stat-cell"><div class="num">92<small>%</small></div><div class="lbl">AI 处理采纳率（由 65%）</div></div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ===================== About ===================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="sec-eyebrow">About · 关于我</div>
+        <h2 class="sec-title">从 UI 设计到 Agent 平台，<br>10 年跨四段<em>完整进化</em></h2>
+        <div class="hl-line">"AI 产品经理不能只会画原型——要能回答三个问题：架构怎么搭、效果怎么稳、账怎么算。"</div>
+        <p>2015 年以 UI 设计师入行，先后在 3 家公司完成 ToC 产品经理的初阶积累；2018 年底加入<strong>和信融慧</strong>转向 ToB，深度服务央国企 7 年 9 个月；近 2 年在公司主导 <strong>APA 企业级智能体流程自动化平台</strong> 的 0→1。完整走过 <strong>UI 设计 → ToC 产品经理 → ToB 产品经理（RPA）→ AI 产品经理（Agent 平台）</strong>四次能力跃迁。</p>
+        <p>近 2 年在 APA 平台中：设计三层解耦架构、落地七层 PromptOps 与 RAG 知识增强体系、构建 Judge + Auto-Patch 质量闭环、主导 6 款 LLM + 4 款 OCR 选型评测与动态模型路由——把模型幻觉率压到 5% 以内、单次 Token 成本精算到 <strong>0.06 元</strong>。</p>
+        <p>相比大厂"功能迭代型"AI PM，我的差异化在于：<strong>真的把 Agent 卖进了央国企并稳定投产</strong>——懂信创、懂等保、懂招投标，也懂一线业务人员怎么才愿意用 AI；又因为早年是 UI 设计师出身，对"复杂系统的可用性"有本能的敏感。</p>
+        <div class="path-strip">
+          <span class="path-step"><span class="yr">2015</span>UI 设计师</span><span class="path-arrow">→</span>
+          <span class="path-step"><span class="yr">2017</span>ToC 产品经理</span><span class="path-arrow">→</span>
+          <span class="path-step"><span class="yr">2018</span>ToB 产品经理（RPA）</span><span class="path-arrow">→</span>
+          <span class="path-step"><span class="yr">2024</span>AI 产品经理（Agent）</span><span class="path-arrow">→</span>
+          <span class="path-step now">求职中 · 期待下一站</span>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d1">
+        <div class="facts-card">
+          <div class="fc-head">快速档案 <b>● 求职中</b></div>
+          <div class="fact-row"><span class="k">求职方向</span><span class="v">AI 产品经理 / Agent 方向</span></div>
+          <div class="fact-row"><span class="k">目标城市</span><span class="v">广州（可深圳 / 杭州）</span></div>
+          <div class="fact-row"><span class="k">经验年限</span><span class="v">10 年产品 · 近 8 年 ToB · 2 年 Agent</span></div>
+          <div class="fact-row"><span class="k">电话</span><span class="v"><a href="tel:15690713579">15690713579</a></span></div>
+          <div class="fact-row"><span class="k">邮箱</span><span class="v"><a href="mailto:bcc48625@163.com">bcc48625@163.com</a></span></div>
+          <div class="fact-row"><span class="k">GitHub</span><span class="v"><a href="https://github.com/bcc-pm" target="_blank" rel="noopener">github.com/bcc-pm</a></span></div>
+          <div class="fact-row"><span class="k">行业背书</span><span class="v">信通院 RPA 标准参编专家</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Expertise ===================== -->
+<section class="alt" id="expertise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Expertise · 能力专长</div>
+      <h2 class="sec-title">我能为企业带来什么</h2>
+      <p class="sec-sub">一套完整的"AI 产品落地"能力栈——从平台架构设计，到质量与成本治理，再到央国企商业化闭环。</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-card reveal">
+        <div class="svc-ic">🧩</div>
+        <h3>Agent 平台 0→1 构建</h3>
+        <p>从战略判断到产品落地：流程编排 / 能力原子化 / 三层解耦架构，把 AI 能力做成企业可配置、可监控、可计费的标准化平台。</p>
+      </div>
+      <div class="svc-card reveal reveal-d1">
+        <div class="svc-ic">🧠</div>
+        <h3>Prompt 工程与 Ops</h3>
+        <p>七层 PromptOps 标准化分层管理，把"效果全靠个人手感"变成"平台级可控指标"，降低效果方差、沉淀组织资产。</p>
+      </div>
+      <div class="svc-card reveal reveal-d2">
+        <div class="svc-ic">📚</div>
+        <h3>RAG 知识增强应用</h3>
+        <p>三层三类 RAG 架构：文档清洗、分块策略、检索调优——让 AI"先查资料再作答"，回答有依据、可溯源、少幻觉。</p>
+      </div>
+      <div class="svc-card reveal">
+        <div class="svc-ic">🔬</div>
+        <h3>模型选型与评测</h3>
+        <p>主导 6 款 LLM + 4 款 OCR 系统化评测：从精度、场景适配、成本、信创兼容四维打分，用数据说话而不是看榜单选模型。</p>
+      </div>
+      <div class="svc-card reveal reveal-d1">
+        <div class="svc-ic">⚖️</div>
+        <h3>质量与成本治理</h3>
+        <p>Judge + Auto-Patch 质量闭环、动态模型路由：幻觉率 ≤5%、单次 Token 成本 0.06 元，让企业级 AI"算得过账"。</p>
+      </div>
+      <div class="svc-card reveal reveal-d2">
+        <div class="svc-ic">🏭</div>
+        <h3>央国企商业化交付</h3>
+        <p>信创适配 + 等保三级、POC→商用全流程、招投标技术应答——服务中海油 / 国家电网 / 东方电气 / TCL华星光电等。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Skills ===================== -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Skills · 技能矩阵</div>
+      <h2 class="sec-title">核心技能</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h3><span class="tag-ic">🤖</span>AI 产品能力</h3>
+        <div class="chips">
+          <span>Agent 平台架构设计</span><span>Prompt 工程与 Ops</span><span>RAG 应用</span>
+          <span>模型选型评测</span><span>Token 成本管控</span><span>幻觉治理</span><span>质量评估闭环</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <h3><span class="tag-ic">🏢</span>ToB 产品能力</h3>
+        <div class="chips">
+          <span>需求洞察</span><span>产品架构</span><span>商业化设计</span><span>招投标技术应答</span>
+          <span>央国企大客户交付</span><span>信创 / 等保适配</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h3><span class="tag-ic">🎯</span>行业场景</h3>
+        <div class="chips">
+          <span>财务共享</span><span>制造业流程自动化</span><span>供应链</span>
+          <span>咨询知识服务</span><span>RPA / APA 自动化</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-d1">
+        <h3><span class="tag-ic">🛠</span>工具与方法</h3>
+        <div class="chips">
+          <span>Axure / Figma</span><span>SQL</span><span>Python 基础</span>
+          <span>Jira / 禅道</span><span>敏捷迭代</span><span>数据分析与 ROI 测算</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Projects ===================== -->
+<section class="alt" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Selected Work · 核心项目</div>
+      <h2 class="sec-title">每一个项目，都是一次"AI 落地"的完整决策</h2>
+      <p class="sec-sub">项目按 背景 → 角色 → 关键决策 → 成果 → 复盘 展开。点开详情，看的不只是结果数字，更是我每一步为什么这么选。</p>
+    </div>
+
+    <!-- 主推项目 · APA -->
+    <article class="proj-feature reveal">
+      <div class="pf-main">
+        <span class="pill-tag hot">0→1 主导 · 公司核心战略产品 · 2023—至今</span>
+        <h3>APA 企业级智能体流程自动化平台</h3>
+        <p class="p-sub">把"执行脚本的 RPA"升级为"会思考、能协作的 AI 智能体平台"</p>
+        <p class="p-desc">传统 RPA 面对非结构化、需要理解的业务就"死机"。我主导了从 RPA 到 Agent 的平台级升级：<strong>三层解耦架构</strong>让业务编排与模型解耦；<strong>IBO/VBO 能力原子化</strong>把 AI 封装成业务可拖拽的积木；<strong>七层 PromptOps + 三层三类 RAG</strong> 让效果稳定可控；<strong>动态模型路由</strong>让每一分 Token 钱都花在刀刃上。已支撑制造业、财务、供应链多行业落地。</p>
+        <div class="pills">
+          <span class="pill b">三层解耦架构</span>
+          <span class="pill b">IBO / VBO 抽象</span>
+          <span class="pill b">七层 PromptOps</span>
+          <span class="pill b">三层三类 RAG</span>
+          <span class="pill g">幻觉率 ≤5%</span>
+          <span class="pill g">采纳率 65%→92%</span>
+        </div>
+        <a class="link-more" href="apa-agent-platform.html">阅读完整项目叙事 →</a>
+      </div>
+      <div class="pf-side">
+        <div class="metric"><b>9 大模块</b><span>智能体编排 / 知识库 / 任务调度 / 质量治理 / 成本管控等，全部商用落地</span></div>
+        <div class="metric green"><b>0.06–0.26 元</b><span>单次任务 Token 成本（动态模型路由精算）</span></div>
+        <div class="metric"><b>数十家</b><span>央国企客户：中海油 / 国家电网 / TCL华星光电等</span></div>
+      </div>
+    </article>
+
+    <!-- 三个项目 -->
+    <div class="proj-grid">
+      <a class="proj-card reveal" href="k2v-delivery-platform.html">
+        <span class="proj-num">02</span>
+        <span class="pill-tag">快速验证 · 8 周商用</span>
+        <h3>K2V 智能咨询交付平台</h3>
+        <p class="p-desc">把行业专家知识沉淀为可复用 AI 咨询能力：<strong>多引擎协作 Agent</strong> 让检索、推理、生成各司其职；RAG 知识增强让回答可溯源；Prompt 模板库让非技术顾问也能配置 AI 流程。</p>
+        <div class="pills">
+          <span class="pill g">8 周 MVP → 商用</span>
+          <span class="pill b">多引擎协作</span>
+          <span class="pill b">知识增强 RAG</span>
+        </div>
+        <div class="foot link-more">阅读项目故事 →</div>
+      </a>
+
+      <a class="proj-card reveal reveal-d1" href="finance-ai-agent.html">
+        <span class="proj-num">03</span>
+        <span class="pill-tag green">商业化投产 · 已上线</span>
+        <h3>财务 AI 智能体自动化</h3>
+        <p class="p-desc">财务票据处理全链路自动化：OCR → 大模型抽取 → 规则引擎校验 → 人工复核兜底。主导 <strong>6 款 LLM + 4 款 OCR 评测</strong>与动态路由，财务场景"错不起"，就靠确定性设计兜底。</p>
+        <div class="pills">
+          <span class="pill g">月处理上千单</span>
+          <span class="pill g">采纳率 65%→92%</span>
+          <span class="pill b">单次成本 0.06 元起</span>
+        </div>
+        <div class="foot link-more">阅读项目故事 →</div>
+      </a>
+
+      <a class="proj-card reveal reveal-d2" href="manufacturing-ai-agent.html">
+        <span class="proj-num">04</span>
+        <span class="pill-tag">央国企标杆 · 规模化</span>
+        <h3>制造业智能体流程自动化</h3>
+        <p class="p-desc">服务东方电气、TCL华星光电等制造标杆：从 ROI 最清晰的单场景切入，跑通一个再横向复制。信创环境"一等公民"适配 + 等保三级合规，让 AI 在客户现场真实可跑。</p>
+        <div class="pills">
+          <span class="pill g">累计处理 12 万+ 单</span>
+          <span class="pill b">信创 + 等保三级</span>
+          <span class="pill b">POC → 商用转化</span>
+        </div>
+        <div class="foot link-more">阅读项目故事 →</div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== Experience ===================== -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Experience · 工作经历</div>
+      <h2 class="sec-title">四段经历，一条清晰的进化线</h2>
+      <p class="sec-sub">从"把界面做好"到"把流程做好"，再到"把智能做好"——每一次转身都踩在上一段的地基上。</p>
+    </div>
+
+    <div class="tl">
+      <!-- 主力段：和信融慧 2018/10 - 2026/07 -->
+      <div class="tl-item current reveal">
+        <div class="tl-head">
+          <h3><span class="co">北京和信融慧信息科技</span><span class="role">RPA 产品经理 → AI 产品经理 · 企业级 Agent 平台方向</span></h3>
+          <span class="tl-date">2018/10 — 2026/07 · 7 年 9 个月</span>
+        </div>
+        <p class="tl-desc">从 0 到 1 主导 RPA 主产品线构建，2024 年起全权负责向 APA（智能体流程自动化）架构升级的战略规划与落地执行。</p>
+        <ul>
+          <li><strong>0→1 构建 APA 智能体流程自动化平台</strong>：三层解耦架构（大模型决策 / Agent 调度 / RPA 执行）+ IBO/VBO 能力原子化封装 + 9 大模块全部落地商用，已进入多家金融、制造客户 POC 验证阶段</li>
+          <li><strong>体系化质量与成本治理</strong>：七层 PromptOps + 三层三类 RAG + Judge / Auto-Patch 闭环，幻觉率压至 <b class="d">≤5%</b>；主导 6 款 LLM + 4 款 OCR 评测与动态模型路由，单次 Token 成本精算至 <b class="d">0.06–0.26 元</b></li>
+          <li><strong>RPA 主线沉淀（2018-2024）</strong>：主导产品 3.0→4.0 全面升级，通过中国信通院 RPA 能力评估最高 3+ 级认证；服务<strong>中海油（千万级年合同额）、TCL华星光电、建信金科、东方电气</strong>等数十家央国企；TCL 软硬件预集成方案将交付周期缩短 <b class="d">90%+</b></li>
+          <li><strong>行业标准共建</strong>：作为核心代表参与信通院《机器人流程自动化能力评估方法》行业标准制定</li>
+        </ul>
+      </div>
+
+      <!-- 第二段：登山大道 2018/01 - 2018/10 -->
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="co">广州登山大道科技</span><span class="role">产品负责人（初创团队）</span></h3>
+          <span class="tl-date">2018/01 — 2018/10 · 10 个月</span>
+        </div>
+        <p class="tl-desc">作为初创团队产品负责人，从 0 搭建跨职能团队（后端 / 前端 / 运营），主导电商与社群类微信小程序的需求分析、产品设计与上线交付。</p>
+        <ul>
+          <li><strong>0→1 组建产品 + 研发 + 运营跨职能团队</strong>，完成从需求池管理到版本迭代的完整产品流程闭环</li>
+          <li><strong>主导多个微信小程序项目</strong>（电商 + 社群方向）从需求到上线，验证 C 端用户增长与留存模型</li>
+          <li>第一次完整负责"产品全生命周期"，为后续 ToB 转岗打下管理基础</li>
+        </ul>
+      </div>
+
+      <!-- 第三段：先云 2017/02 - 2018/01 -->
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="co">广东先云信息科技</span><span class="role">产品经理</span></h3>
+          <span class="tl-date">2017/02 — 2018/01 · 11 个月</span>
+        </div>
+        <p class="tl-desc">从 0 到 1 主导油漆行业 B2C 移动商城（Android / iOS 双端）产品设计与项目落地，深入一线业务场景设计垂直行业特色功能。</p>
+        <ul>
+          <li><strong>独立完成 B2C 商城 App 全流程</strong>：需求调研、竞品分析、功能设计、版本迭代与上线发布</li>
+          <li><strong>同步搭建商城后台系统</strong>，覆盖商品 / SKU / 营销 / 权限管理四大模块，形成 App + 后台完整闭环</li>
+          <li>建立"深入业务现场 + 行业 Know-how 沉淀"的产品方法论</li>
+        </ul>
+      </div>
+
+      <!-- 第四段：中配 2015/09 - 2017/02 转型期 -->
+      <div class="tl-item reveal">
+        <div class="tl-head">
+          <h3><span class="co">广东中配互联网络</span><span class="role">UI 设计师 → 产品经理（职业转型）</span></h3>
+          <span class="tl-date">2015/09 — 2017/02 · 1 年 5 个月</span>
+        </div>
+        <p class="tl-desc">以 UI 设计师身份入职，在中配商城（母公司运通四方汽配行业互联网转型核心项目）中完成向产品经理的职业转型。</p>
+        <ul>
+          <li><strong>Web 端界面设计 + App 端产品规划</strong>：从纯设计执行扩展到功能定义与项目推进</li>
+          <li>在职期间完成<strong>4 项 GUI 设计专利</strong>的申请与落地，为后续产品经理之路奠定设计底色</li>
+          <li>第一份工作就走通"UI → PM"完整转型路径，验证了设计与产品的底层能力是相通的</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Credentials & Education ===================== -->
+<section class="alt" id="credentials">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow">Credentials · 资质与背景</div>
+      <h2 class="sec-title">行业背书与教育背景</h2>
+    </div>
+
+    <div class="cred-grid">
+      <div class="cred-card reveal">
+        <div class="cred-ic">🏛</div>
+        <h3>信通院 RPA 标准参编专家</h3>
+        <p>参与行业标准共建，主导产品对标与信创适配。</p>
+      </div>
+      <div class="cred-card reveal reveal-d1">
+        <div class="cred-ic">🎨</div>
+        <h3>GUI 设计专利 4 项</h3>
+        <p>产品界面外观设计——设计出身的产品经理，能力有专利佐证。</p>
+      </div>
+      <div class="cred-card reveal reveal-d2">
+        <div class="cred-ic">📜</div>
+        <h3>主导申报软著 10 项</h3>
+        <p>作为产品负责人撰写全部申报材料（著作权归属所在企业）。</p>
+      </div>
+      <div class="cred-card reveal reveal-d3">
+        <div class="cred-ic">🏭</div>
+        <h3>央国企标杆客户</h3>
+        <p>中海油 / 国家电网 / 东方电气 / TCL华星光电等数十家。</p>
+      </div>
+    </div>
+
+    <div class="edu-band reveal">
+      <div class="l">
+        <div class="e-ic">🎓</div>
+        <div>
+          <h3>洛阳师范学院 · 艺术设计（本科）</h3>
+          <p>"设计思维 → 产品思维"复合背景 · 持续学习 AI / Agent 领域前沿课程与实践</p>
+        </div>
+      </div>
+      <span class="r">2011 — 2015</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Contact ===================== -->
+<section id="contact">
+  <div class="wrap-narrow">
+    <div class="sec-head reveal" style="margin-left:auto;margin-right:auto;text-align:center">
+      <div class="sec-eyebrow" style="justify-content:center">Contact · 联系我</div>
+      <h2 class="sec-title">如果你在找一位<br>能把 AI <em>真正落进企业流程</em>的产品经理</h2>
+      <p class="sec-sub">欢迎邮件或电话沟通，也欢迎先翻一翻上面的项目故事——那里面已经写了我怎么思考。</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <a class="contact-card" href="tel:15690713579">
+        <div class="c-ic">📞</div><b>电话</b><span>15690713579</span>
+      </a>
+      <a class="contact-card" href="mailto:bcc48625@163.com">
+        <div class="c-ic">✉️</div><b>邮箱</b><span>bcc48625@163.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/bcc-pm" target="_blank" rel="noopener">
+        <div class="c-ic">🐙</div><b>GitHub</b><span>github.com/bcc-pm</span>
+      </a>
+      <div class="contact-card">
+        <div class="c-ic">📍</div><b>城市</b><span>广州 · 可深圳 / 杭州</span>
+      </div>
+    </div>
+
+    <div class="cta-band reveal">
+      <h3>期待与您聊聊 AI 产品落地这件事</h3>
+      <p>一封邮件即可约时间 —— 支持线下（广州）或线上会议。</p>
+      <a class="btn btn-primary" href="mailto:bcc48625@163.com?subject=关于%20AI产品经理岗位的沟通邀请">✉ 发邮件给我</a>
+      <div class="mini">建议邮件标题注明「AI 产品经理」相关岗位，回复更快</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Footer ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px">
+          <span class="brand-mark">白</span>
+          <span class="brand-name">白崇村<small>AI PRODUCT MANAGER</small></span>
+        </a>
+        <p style="margin-top:12px">10 年产品经验 · 近 8 年 ToB · 企业级 AI Agent 平台 0→1 · 作品集与简历数据口径一致，所有项目叙事均经脱敏改写。</p>
+      </div>
+      <div>
+        <h4>快速导航</h4>
+        <ul>
+          <li><a href="#about">关于我</a></li>
+          <li><a href="#expertise">能力专长</a></li>
+          <li><a href="#projects">核心项目</a></li>
+          <li><a href="#experience">工作经历</a></li>
+          <li><a href="#credentials">资质与教育</a></li>
+        </ul>
+      </div>
+      <div class="fb-contact">
+        <h4>联系方式</h4>
+        <a class="meta-chip" href="tel:15690713579" style="margin-bottom:8px">☎ 15690713579</a>
+        <a class="meta-chip" href="mailto:bcc48625@163.com">✉ bcc48625@163.com</a>
+        <a class="meta-chip" href="https://github.com/bcc-pm" target="_blank" rel="noopener" style="display:inline-flex">⌥ github.com/bcc-pm</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> 白崇村 · Portfolio v3</span>
+      <span>广州 · AI 产品经理 · 期待新机会</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 年份
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // 移动端导航
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+  // 滚动入场
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
