@@ -4,7 +4,7 @@
 
 这里是托管在 GitHub Pages 的**个人作品集站源码仓库**。站点本身即简历的"证据链"——每个项目页用 STAR 结构展开"背景 → 角色 → 关键决策 → 成果 → 复盘"，重点呈现我在 0→1 平台搭建、商业化落地与质量成本治理中的真实产品决策。
 
-👉 **直接访问作品集站**：<https://bcc-pm.github.io>
+👉 **直接访问作品集站**：[https://bcc-pm.github.io](https://bcc-pm.github.io)
 
 ---
 
@@ -33,7 +33,7 @@ bcc-pm.github.io/
 
 ### 站点访问方式
 
-- **线上预览**：<https://bcc-pm.github.io> （GitHub Pages 已自动部署）
+- **线上预览**：[https://bcc-pm.github.io](https://bcc-pm.github.io) （GitHub Pages 已自动部署）
 - **本地预览**：下载本仓库后直接双击 `index.html` 即可（无需任何构建工具）
 
 ### 维护说明
@@ -45,12 +45,12 @@ bcc-pm.github.io/
 
 ## 相关项目仓库
 
-| 项目             | 仓库链接                                                                              | 主题                                    |
-| -------------- | --------------------------------------------------------------------------------- | ------------------------------------- |
-| APA 智能体流程自动化平台 | [bcc-pm/apa-agent-platform](https://github.com/bcc-pm/apa-agent-platform)         | RPA → Agent 架构升级 · 三层解耦 · IBO/VBO 原子化 |
-| K2V 智能咨询交付平台   | [bcc-pm/k2v-delivery-platform](https://github.com/bcc-pm/k2v-delivery-platform)   | 多引擎协作 Agent · 七层 PromptOps · 8 周 MVP  |
-| 财务 AI 智能体      | [bcc-pm/finance-ai-agent](https://github.com/bcc-pm/finance-ai-agent)             | 6 款 LLM + 4 款 OCR 选型评测 · 报销自动化        |
-| 制造业 AI 智能体     | [bcc-pm/manufacturing-ai-agent](https://github.com/bcc-pm/manufacturing-ai-agent) | 工业 RPA + 智能问答 · 12 万+ 订单              |
+| 项目 | 仓库链接 | 主题 |
+|---|---|---|
+| APA 智能体流程自动化平台 | [bcc-pm/apa-agent-platform](https://github.com/bcc-pm/apa-agent-platform) | RPA → Agent 架构升级 · 三层解耦 · IBO/VBO 原子化 |
+| K2V 智能咨询交付平台 | [bcc-pm/k2v-delivery-platform](https://github.com/bcc-pm/k2v-delivery-platform) | 多引擎协作 Agent · 七层 PromptOps · 8 周 MVP |
+| 财务 AI 智能体 | [bcc-pm/finance-ai-agent](https://github.com/bcc-pm/finance-ai-agent) | 6 款 LLM + 4 款 OCR 选型评测 · 报销自动化 |
+| 制造业 AI 智能体 | [bcc-pm/manufacturing-ai-agent](https://github.com/bcc-pm/manufacturing-ai-agent) | 工业 RPA + 智能问答 · 12 万+ 订单 |
 
 > 每个项目仓库都包含一份 `README.md`，按 STAR 结构详细展开项目背景、关键决策、量化成果与复盘。
 
@@ -70,7 +70,7 @@ bcc-pm.github.io/
 ## 联系我
 
 - **手机 / 微信**：15690713579
-- **邮箱**：<bcc48625@163.com>
+- **邮箱**：bcc48625@163.com
 - **GitHub**：[github.com/bcc-pm](https://github.com/bcc-pm)
 - **意向城市**：广州（可考虑深圳 / 杭州）
 

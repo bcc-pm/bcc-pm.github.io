@@ -45,7 +45,7 @@ a{color:inherit}
 /* ---------- 区块通用 ---------- */
 section{padding:84px 0;position:relative}
 section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.sec-head{max-width:720px;margin-bottom:44px}
+.sec-head{max-width:980px;margin-bottom:44px}
 .sec-eyebrow{
   display:inline-flex;align-items:center;gap:10px;
   font-size:.78rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;
@@ -310,7 +310,7 @@ section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bo
 @media(max-width:640px){.proj-grid{grid-template-columns:1fr}}
 
 /* ---------- Experience 时间线 ---------- */
-.tl{position:relative;padding-left:0;max-width:860px}
+.tl{position:relative;padding-left:0;max-width:1080px}
 .tl-item{position:relative;padding:0 0 38px 34px;border-left:2px solid var(--line)}
 .tl-item:last-child{padding-bottom:6px}
 .tl-item::before{
