@@ -473,6 +473,36 @@ section.alt{background:var(--bg-soft);border-top:1px solid var(--line);border-bo
 
 /* 修复：入场后的 hover 位移优先级（需高于 .reveal.visible 的 transform:none） */
 .reveal.visible.proj-card:hover{transform:translateY(-5px)}
+/* 无详情链接的项目库卡片：保持静态，不位移 */
+.reveal.visible.proj-card.is-static:hover{transform:none;box-shadow:var(--shadow-sm);border-color:var(--line)}
+
+/* ---------- 项目库 tab 分类 ---------- */
+.tabbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.tab{
+  border:1px solid var(--line);background:#fff;color:var(--mut);
+  font-size:.86rem;font-weight:600;padding:8px 18px;border-radius:50px;cursor:pointer;
+  transition:all .25s;font-family:inherit;
+}
+.tab:hover{border-color:var(--brand);color:var(--brand)}
+.tab.active{background:var(--brand);border-color:var(--brand);color:#fff;box-shadow:0 6px 16px -6px rgba(79,70,229,.5)}
+.tab .cnt{opacity:.65;font-weight:500;margin-left:4px}
+
+/* 项目库卡片增强 */
+.proj-card .p-cat{display:inline-block;font-size:.72rem;font-weight:700;color:var(--brand-deep);background:var(--brand-soft);border-radius:6px;padding:2px 9px;margin-bottom:10px;letter-spacing:.02em}
+.proj-card .p-cat.g{background:var(--green-soft);color:var(--green)}
+.proj-card.is-static{cursor:default}
+.proj-card .nostory{font-size:.79rem;color:var(--mut-2);font-style:italic}
+
+/* 首页「查看全部项目」入口 */
+.proj-allband{
+  margin-top:26px;padding:26px 30px;border-radius:18px;
+  background:linear-gradient(120deg,#f8f7ff,#eef2ff);
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap;
+}
+.proj-allband .ab-txt h4{font-size:1.12rem;font-weight:900;margin-bottom:6px}
+.proj-allband .ab-txt p{font-size:.88rem;color:var(--mut)}
+@media(max-width:640px){.proj-allband{flex-direction:column;align-items:flex-start}}
 .reveal.visible.svc-card:hover{transform:translateY(-4px)}
 .reveal.visible.cred-card:hover{transform:translateY(-3px)}
 .reveal.visible.contact-card:hover{transform:translateY(-4px)}

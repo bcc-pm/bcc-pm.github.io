@@ -24,11 +24,13 @@
 bcc-pm.github.io/
 ├── README.md            ← 你正在看的文件
 ├── index.html           ← 作品集站首页（Hero / 关于 / 能力 / 项目 / 经历 / 资质 / 联系）
-├── style.css            ← 全站共享样式表（indigo 主题、响应式、滚动入场动画）
+├── projects.html        ← 完整项目库（tab 分类：AI / RPA / 小程序&APP / 定制化，共 15 个项目）
+├── style.css            ← 全站共享样式表（indigo 主题、响应式、tab 切换、滚动入场动画）
 ├── apa-agent-platform.html        ← 项目 01：APA 智能体流程自动化平台
 ├── k2v-delivery-platform.html     ← 项目 02：K2V 智能咨询交付平台
 ├── finance-ai-agent.html          ← 项目 03：财务 AI 智能体（6 款 LLM + 4 款 OCR 评测）
-└── manufacturing-ai-agent.html    ← 项目 04：制造业 AI 智能体（东方电气 / TCL 华星光电）
+├── manufacturing-ai-agent.html    ← 项目 04：制造业 AI 智能体（东方电气 / TCL 华星光电）
+└── rpa-main-line.html             ← 项目 05：RPA 主产品线构建与市场拓展（APA 前身）
 ```
 
 ### 站点访问方式
@@ -39,7 +41,9 @@ bcc-pm.github.io/
 ### 维护说明
 
 - 修改任意 HTML 后，**必须连同 `style.css` 一起提交**，否则页面会失去样式（样式表为外部引用）
-- 新增项目页：在 `index.html` 的 `Projects` 区块复制一份 `.proj-card` 卡片，并在本仓库追加对应 `.html` 即可
+- 首页只放 **AI 智能体方向的主推项目**（精选），完整项目走 `projects.html`（首页底部有"查看全部项目"入口）
+- 新增项目：在 `projects.html` 的项目网格复制一份 `.proj-card` 卡片，标好 `data-cat`（`ai / rpa / app / custom`）即可自动归入对应 tab；有独立详情页的项目，卡片底部放 `查看完整叙事` 链接，暂无详情页的用 `is-static` + 概览标注
+- 新增项目类型：在 `projects.html` 的 `.tabbar` 增加一个 `<button class="tab">`，同步更新对应 tab 计数即可
 
 ---
 
@@ -58,10 +62,10 @@ bcc-pm.github.io/
 
 ## 技术栈
 
-- **HTML5** + **CSS3**（CSS 变量、Grid/Flex 布局、IntersectionObserver 滚动入场动画）
-- **原生 JavaScript**（仅用于移动端汉堡菜单切换与平滑滚动）
+- **HTML5** + **CSS3**（CSS 变量、Grid/Flex 布局、IntersectionObserver 滚动入场动画、原生 tab 切换）
+- **原生 JavaScript**（仅用于移动端汉堡菜单、tab 过滤与滚动入场，零依赖）
 - **零依赖、零构建**：不引入任何前端框架与打包工具
-- **字体**：系统字体栈 + 中文 fallback（不依赖 Google Fonts，国内访问无压力）
+- **字体**：默认系统字体栈，中文环境自动回退；页面通过 Google Fonts 加载 Noto Sans SC 作增强（加载失败时自动落到系统字体，不影响阅读）
 
 > 选型理由：作品集站重在内容可读性与长期可维护性，避免引入会被版本淘汰的前端框架。所有设计 token（颜色、间距、字号）集中在 `style.css` 的 `:root` 中管理，改色改风格只需改一处。
 
