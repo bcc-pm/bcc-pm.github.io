@@ -12,8 +12,8 @@
 
 - **姓名**：白崇村（男 · 33 岁）
 - **10 年产品经验，其中近 8 年 ToB**（2015 入行 → UI 设计师 → ToC PM → ToB PM/RPA → AI PM/Agent）
-- **近 2 年深耕企业级 AI Agent 平台**：主导 APA（智能体流程自动化）平台 0→1，落地 9 大模块、服务数十家央国企
-- **行业背书**：信通院《机器人流程自动化能力评估方法》行业标准参编专家
+- **近 2 年深耕企业级 AI Agent 平台**：主导 APA（智能体流程自动化）平台 0→1，落地 9 大模块商用；财务 AI 智能体投产（月处理订单上千单、采纳率 92%）
+- **行业背书**：信通院《机器人流程自动化能力评估方法》团体标准参编专家
 - **核心成果**：单次 Agent 任务 Token 成本精算到 **0.06–0.26 元**、AI 处理采纳率 **65% → 92%**、模型幻觉率 **≤5%**
 
 ---
@@ -24,13 +24,15 @@
 bcc-pm.github.io/
 ├── README.md            ← 你正在看的文件
 ├── index.html           ← 作品集站首页（Hero / 关于 / 能力 / 项目 / 经历 / 资质 / 联系）
-├── projects.html        ← 完整项目库（tab 分类：AI / RPA / 小程序&APP / 定制化，共 15 个项目）
+├── projects.html        ← 完整项目库（tab 分类：AI / RPA / 小程序&APP / 定制化，共 19 个项目）
 ├── style.css            ← 全站共享样式表（indigo 主题、响应式、tab 切换、滚动入场动画）
 ├── apa-agent-platform.html        ← 项目 01：APA 智能体流程自动化平台
 ├── k2v-delivery-platform.html     ← 项目 02：K2V 智能咨询交付平台
 ├── finance-ai-agent.html          ← 项目 03：财务 AI 智能体（6 款 LLM + 4 款 OCR 评测）
-├── manufacturing-ai-agent.html    ← 项目 04：制造业 AI 智能体（东方电气 / TCL 华星光电）
-└── rpa-main-line.html             ← 项目 05：RPA 主产品线构建与市场拓展（APA 前身）
+├── manufacturing-ai-agent.html    ← 项目 04：制造业流程自动化交付（规则引擎 · 东方电气 / TCL 华星光电）
+├── rpa-main-line.html             ← 项目 05：RPA 主产品线构建与市场拓展（APA 前身）
+├── allinone-odm.html              ← 项目 06：机器人一体机 ODM 解决方案（软硬一体 · 信创）
+└── demand-ops-platform.html       ← 项目 07：企业自动化需求收集与运营平台（工具→平台演化）
 ```
 
 ### 站点访问方式
@@ -51,10 +53,10 @@ bcc-pm.github.io/
 
 | 项目 | 仓库链接 | 主题 |
 |---|---|---|
-| APA 智能体流程自动化平台 | [bcc-pm/apa-agent-platform](https://github.com/bcc-pm/apa-agent-platform) | RPA → Agent 架构升级 · 三层解耦 · IBO/VBO 原子化 |
+| APA 智能体流程自动化平台 | [bcc-pm/apa-agent-platform](https://github.com/bcc-pm/apa-agent-platform) | RPA → Agent 升级 · 三层能力分层 · IBO/VBO 原子化 |
 | K2V 智能咨询交付平台 | [bcc-pm/k2v-delivery-platform](https://github.com/bcc-pm/k2v-delivery-platform) | 多引擎协作 Agent · 七层 PromptOps · 8 周 MVP |
 | 财务 AI 智能体 | [bcc-pm/finance-ai-agent](https://github.com/bcc-pm/finance-ai-agent) | 6 款 LLM + 4 款 OCR 选型评测 · 报销自动化 |
-| 制造业 AI 智能体 | [bcc-pm/manufacturing-ai-agent](https://github.com/bcc-pm/manufacturing-ai-agent) | 工业 RPA + 智能问答 · 12 万+ 订单 |
+| 制造业流程自动化交付 | [bcc-pm/manufacturing-ai-agent](https://github.com/bcc-pm/manufacturing-ai-agent) | 规则引擎 + SAP UI 自动化 · 12 万+ 单 |
 
 > 每个项目仓库都包含一份 `README.md`，按 STAR 结构详细展开项目背景、关键决策、量化成果与复盘。
 
@@ -84,7 +86,8 @@ bcc-pm.github.io/
 
 ## 内容脱敏说明
 
-- 客户名称保留作为公开背书（中海油、国家电网、TCL华星光电、东方电气、建信金科等）
+- 客户名称保留作为公开背书（中海油、国家电网、TCL华星光电、东方电气、建信金科、大唐宝昌电厂等）；医疗健康类客户脱敏处理
+- ODM 合作方按"头部工业互联网平台企业（合作方自有品牌）"脱敏
 - 合同金额、Prompt 原文、内部业务流流程图等均经过改写或抽象化处理
 - 作品集所有量化数据与简历保持口径一致，但展示口径优先服务于"读懂我做了什么"
 
